@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="background-image"></div>
+      <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+          <div class="logo">TODO</div>
+          <div class="toggle-light-dark"><img src="./images/icon-sun.svg" alt=""></div>
+        </div>
+
+        <!-- Input type -->
+        <div class="input bar">
+          <input type="text" id="text-input" placeholder="Enter your todos">
+        </div>
+
+        <!-- Lists all, active, completed -->
+        <div class="lists">
+          <!-- All list -->
+          <ul class="all-items" id="all-items">
+            <!-- <li class="all-list-item bar">
+              <div class="circle" aria-checked="false">
+                <div class="inner-circle"></div>
+              </div>
+              <div class="text">Lode</div>
+              <div class="cancle"><img src="./images/icon-cross.svg" alt=""></div>
+          </li>
+          <li class="all-list-item bar">
+            <div class="circle" aria-checked="false"></div>
+            <div class="text">sale</div>
+            <div class="cancle"><img src="./images/icon-cross.svg" alt=""></div>
+        </li>
+        <li class="all-list-item bar">
+          <div class="circle" aria-checked="false"></div>
+          <div class="text">Mohuuu</div>
+          <div class="cancle"><img src="./images/icon-cross.svg" alt=""></div>
+      </li>
+            <li class="all-list-item bar">
+                <div class="circle" aria-checked="false"></div>
+                <div class="text">Buy Eggs</div>
+                <div class="cancle"><img src="./images/icon-cross.svg" alt=""></div>
+            </li>
+            <li class="all-list-item bar">
+                <div class="circle" aria-checked="false"></div>
+                <div class="text">Go to gym</div>
+                <div class="cancle"><img src="./images/icon-cross.svg" alt=""></div>
+            </li>
+            <li class="all-list-item bar">
+                <div class="circle" aria-checked="false"></div>
+                <div class="text">Call home</div>
+                <div class="cancle"><img src="./images/icon-cross.svg" alt=""></div>
+            </li> -->
+          </ul>
+
+          <!-- Active List -->
+          <ul class="active-items hide" id="active-items">
+              <!-- <li class="active-list-item bar">
+                <div class="text">Alredy done</div> Whichever are not checked will append here
+              </li>
+              <li class="active-list-item bar">
+                <div class="text">Alredy done</div>Whichever are not checked will append here
+              </li>
+              <li class="active-list-item bar">
+                <div class="text">Alredy done</div> Whichever are not checked will append here
+              </li> -->
+          </ul>
+
+          <!-- Completed list -->
+          <ul class="completed-items hide" id="completed-items">
+            <!-- <li class="completed-list-item">
+              <div class="text"></div> Whichever are checked will append here
+             </li> -->
+          </ul>
+        </div>
+
+        <footer class="footer bar">
+          <p class="small-text"><span class="item-number">0</span> items left</p>
+
+          <div class="status">
+            <p class="all blue">All</p>
+            <p class="active blue">Active</p>
+            <p class="completed blue">Completed</p>
+          </div>
+
+          <p class="clear-completed">Clear completed</p>
+        </footer>
+      </div>
+  <!-- Todo
+
+  Add dynamic number items left
+
+  All
+  Active 
+  Completed
+
+  Clear Completed
+
+  Drag and drop to reorder list
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
